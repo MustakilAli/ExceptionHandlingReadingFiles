@@ -1,0 +1,16 @@
+06/ 06/ 2018 
+
+Checked Exceptions with Reading Files 
+
+important packages in java when it comes to reading and writing to file: 
+
+java.io
+java.nio
+
+FileReader fr = new FileReader("Numbers.txt"); //A regular file reader, if the file you are trying to reach is in a separate document- MUST PASTE FILE PATH
+BufferedReader br = new BufferedReader(fr);
+
+================
+
+In my project, I read data from files, and I use File Readers from java.io package. and Because the constructors and methods throw checked exceptions, 
+I have to use try/catch blocks in my code. And I always use Finally block to close opened files. 
